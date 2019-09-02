@@ -1,5 +1,6 @@
 <template>
     <v-ons-page id="post-show">
+
         <div class="center" v-html="post.content_html">
 
         </div>
@@ -8,12 +9,16 @@
 </template>
 
 <script>
+
     import store from '../store'
     export default {
         name: "Detail",
         props:['id'],
         created(){
             console.log(this.id)
+        },
+        components:{
+
         },
         computed:{
             post: () => store.state.post.item
@@ -27,12 +32,12 @@
     }
 </script>
 
-<style scoped lang="sass">
+<style lang="scss">
     #post-show{
-        width: 100%;
-        padding: 10px;
+        width: 90%;
+        margin: auto;
     }
-    img{
+    #post-show img{
         max-width: 100%!important;
     }
 </style>

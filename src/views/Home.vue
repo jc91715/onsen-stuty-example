@@ -29,11 +29,11 @@
                         page: Post,
                         key: "postPage"
                     },
-                    {
-                        label: '代码片段',
-                        page: Script,
-                        key: "scriptPage"
-                    }
+                    // {
+                    //     label: '代码片段',
+                    //     page: Script,
+                    //     key: "scriptPage"
+                    // }
                 ]
             };
         },
